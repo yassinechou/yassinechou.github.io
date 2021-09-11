@@ -1,0 +1,87 @@
+.contact .infos input:not(input[type="file"]){
+    display: block;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 400px;
+}
+.contact .infos input:focus {
+    color: var(--main-color);
+}
+.contact .infos .photo label,input{
+    display: block;
+}
+.contact .infos .photo label {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.contact .infos .photo {
+    margin-bottom: 30px;
+}
+.contact .infos textarea{
+    width: 400px;
+    height: 200px;
+    padding: 10px 40px;
+}
+.contact .infos input[type="submit"] {
+    margin-top: 15px;
+    background-color: var(--main-color-1);
+    color: white;
+}
+.contact .infos input[type="file"] {
+    background-color: var(--main-color-1);
+    color: white;
+}
+.contact .content .infos {
+    padding-top: 40px;
+    flex-basis: 650%;
+}
+.contact .content .adresse {
+    flex-basis: 30%;
+}
+.contact .content .adresse address p{
+    margin-top: 10px;
+}
+.contact .content .adresse address h4 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: var(--main-color);
+}
+.contact .txt {
+    text-align: center;
+    font-size: 3em;
+    text-transform: capitalize;
+    color: var(--main-color-1);
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:768px) {
+    .contact .content {
+        flex-direction: column;
+    }
+    .contact .content .infos {
+        flex-basis: 100%;
+    }
+    .contact .content .adresse {
+        text-align: center;
+        margin: 30px 0 20px;
+    }
+}
+@media(max-width:500px){
+    .contact .infos input,
+    .contact .infos textarea{
+        width: 300px !important;
+    }
+}
+@media(max-width:317px){
+    .contact .infos input,
+    .contact .infos textarea{
+        width: 250px !important;
+    }
+}
