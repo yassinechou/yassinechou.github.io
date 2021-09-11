@@ -1,0 +1,114 @@
+.lifeStyle {
+    width: 100%;
+}
+.lifeStyle .videos video {
+    width: 100%;
+    object-fit: cover;
+}
+.lifeStyle .videos {
+    position: relative;
+}
+.lifeStyle .videos .pictures {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.lifeStyle .videos .pictures img {
+    transform: scale(0.7);
+    border-radius: 5px;
+    transition: 0.7s ease-in-out;
+    filter: opacity(0.5);
+}
+.lifeStyle .videos .pictures img:hover{
+    transform: scale(0.8);
+    filter: opacity(1);
+}
+@media(max-width:576px) {
+    .lifeStyle .videos .pictures img {
+        width: 100px;
+    }
+}
+/**************content ************************/
+.content .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.content .container .col {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+}
+@media(max-width:1200px) {
+    .content .container .col {
+        flex-basis: 30%;
+    }
+    .content .container .text {
+        width: 300px;
+    }
+    .content .container .text p {
+        width:276px !important;
+    }
+}
+@media(max-width:992px) {
+    .content .container .col {
+        flex-basis: 30%;
+    }
+    .content .container .text p {
+        width:200px !important;
+    }
+}
+@media(max-width:768px) {
+    .content .container {
+        flex-direction: column;
+    }
+    .content .container .text {
+        width: 300px;
+        text-align: center;
+    }
+    .content .container .text p {
+        width:300px !important;
+        text-align: center;
+    }
+    .content .container .col {
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:375px) {
+    .content .container .col img {
+        width: 220px;
+    }
+}
+.content .container .text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    margin: auto;
+    color: white;
+    padding: 10px 5px;
+    transition: 1s ease-in-out;
+    width: 300px;
+}
+.content .container .col:hover .text {
+    bottom: 0;
+    background-color: #ff48487a;
+}
+.content .container .text h3 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.content .container .text p{
+    width: 280px;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+.content .container .text a {
+    text-transform: capitalize;
+    color: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0 10px;
+}
